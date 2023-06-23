@@ -123,12 +123,10 @@ const userSchema = new mongoose.Schema({
 
   residentialrorelative: {
     type: String,
-    required: true
   },
 
   commercial: {
     type: String,
-    required: true
   },
 
   nameofperson: {
