@@ -92,22 +92,22 @@ const userSchema = new mongoose.Schema({
   },
 
   passportissuedate: {
-    type: String,
+    type: Number,
     required: true
   },
 
   passportexpirydate: {
-    type: String,
+    type: Number,
     required: true
   },
 
   arrivaldate: {
-    type: String,
+    type: Number,
     required: true
   },
 
   departuredate: {
-    type: String,
+    type: Number,
     required: true
   },
 
@@ -117,7 +117,7 @@ const userSchema = new mongoose.Schema({
   },
 
   phoneno: {
-    type: String,
+    type: Number,
     required: true
   },
 
@@ -149,7 +149,7 @@ const userSchema = new mongoose.Schema({
   },
 
   primarynumber: {
-    type: String,
+    type: Number,
     required: true
   },
 
