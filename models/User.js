@@ -37,17 +37,17 @@ const userSchema = new mongoose.Schema({
   },
 
   dbirth: {
-    type: Number,
+    type: String,
     required: true
   },
 
   cbirth: {
-    type: Number,
+    type: String,
     required: true
   },
 
   ctbirth: {
-    type: Number,
+    type: String,
     required: true
   },
 
