@@ -32,8 +32,7 @@ router.route('/add').post((req, res) => {
   const departuredate = req.body.departuredate;
   const communication = req.body.communication;
   const phoneno = req.body.phoneno;
-  const residentialrorelative = req.body.residentialrorelative;
-  const commercial = req.body.commercial;
+  const residentialaddresssaudi = req.body.residentialaddresssaudi;
   const nameofperson = req.body.nameofperson;
   const scity = req.body.scity;
   const address1 = req.body.address1;
@@ -66,8 +65,7 @@ router.route('/add').post((req, res) => {
     departuredate,
     communication,
     phoneno,
-    residentialrorelative,
-    commercial,
+    residentialaddresssaudi,
     nameofperson,
     scity,
     address1,
@@ -108,8 +106,7 @@ router.route('/update/:id').post((req, res) => {
       user.departuredate = req.body.departuredate;
       user.communication = req.body.communication;
       user.phoneno = req.body.phoneno;
-      user.residentialrorelative = req.body.residentialrorelative;
-      user.commercial = req.body.commercial;
+      user.residentialaddresssaudi = req.body.residentialaddresssaudi;
       user.nameofperson = req.body.nameofperson;
       user.scity = req.body.scity;
       user.address1 = req.body.address1;
