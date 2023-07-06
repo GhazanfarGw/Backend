@@ -2,8 +2,9 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
 
-  image:{
-    image:String
+  picture: {
+    type: String,
+    required: true
   },
   
   countrynationality: {
@@ -154,6 +155,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+
 },
 
   {
