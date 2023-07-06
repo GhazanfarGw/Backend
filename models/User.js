@@ -18,8 +18,8 @@ const userSchema = new mongoose.Schema({
 
   father: {
     type: String,
-    required: true
-  },
+    required: false
+  },  
 
   lastname: {
     type: String,
@@ -92,22 +92,22 @@ const userSchema = new mongoose.Schema({
   },
 
   passportissuedate: {
-    type: Number,
+    type: String,
     required: true
   },
 
   passportexpirydate: {
-    type: Number,
+    type: String,
     required: true
   },
 
   arrivaldate: {
-    type: Number,
+    type: String,
     required: true
   },
 
   departuredate: {
-    type: Number,
+    type: String,
     required: true
   },
 
@@ -117,16 +117,13 @@ const userSchema = new mongoose.Schema({
   },
 
   phoneno: {
-    type: Number,
+    type: String,
     required: true
   },
 
-  residentialrorelative: {
+  residentialaddresssaudi: {
     type: String,
-  },
-
-  commercial: {
-    type: String,
+    required: true
   },
 
   nameofperson: {
@@ -149,17 +146,13 @@ const userSchema = new mongoose.Schema({
   },
 
   primarynumber: {
-    type: Number,
+    type: String,
     required: true
   },
 
   email: {
     type: String,
     required: true
-  },
-
-  image: {
-    type: String
   },
 },
 
