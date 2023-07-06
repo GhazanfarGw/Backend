@@ -8,7 +8,7 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/add').post((req, res) => {
-  const image = req.body.image;
+  const picture = req.body.picture;
   const countrynationality = req.body.countrynationality;
   const firstname = req.body.firstname;
   const father = req.body.father;
@@ -41,7 +41,7 @@ router.route('/add').post((req, res) => {
   const email = req.body.email;
   
   const newUser = new User({
-    image,
+    picture,
     countrynationality,
     firstname,
     father,
@@ -82,7 +82,7 @@ router.route('/add').post((req, res) => {
 router.route('/update/:id').post((req, res) => {
   User.findById(req.params.id)
     .then(user => {
-      user.image = req.body.image;
+      user.picture = req.body.picture;
       user.countrynationality = req.body.countrynationality;
       user.firstname = req.body.firstname;
       user.father = req.body.father;
