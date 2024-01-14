@@ -30,6 +30,7 @@ router.route('/add').post((req, res) => {
   const passportexpirydate = req.body.passportexpirydate;
   const arrivaldate = req.body.arrivaldate;
   const departuredate = req.body.departuredate;
+  const purposeofvisit =req.body.purposeofvisit;
   const communication = req.body.communication;
   const phoneno = req.body.phoneno;
   const residentialaddresssaudi = req.body.residentialaddresssaudi;
@@ -63,6 +64,7 @@ router.route('/add').post((req, res) => {
     passportexpirydate,
     arrivaldate,
     departuredate,
+    purposeofvisit,
     communication,
     phoneno,
     residentialaddresssaudi,
@@ -104,6 +106,7 @@ router.route('/update/:id').post((req, res) => {
       user.passportexpirydate = req.body.passportexpirydate;
       user.arrivaldate = req.body.arrivaldate;
       user.departuredate = req.body.departuredate;
+      user.purposeofvisit = req.body.purposeofvisit;
       user.communication = req.body.communication;
       user.phoneno = req.body.phoneno;
       user.residentialaddresssaudi = req.body.residentialaddresssaudi;
