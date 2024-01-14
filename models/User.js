@@ -112,6 +112,11 @@ const userSchema = new mongoose.Schema({
     required: true
   },
 
+  purposeofvisit: {
+    type: String,
+    required: true
+  },
+
   communication: {
     type: String,
     required: true
